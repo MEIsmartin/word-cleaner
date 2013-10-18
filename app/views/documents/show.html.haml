@@ -1,0 +1,14 @@
+%p#notice= notice
+
+%h2= @document.title
+%h3 Straight HTML:
+%pre
+  = @document.cleaned
+
+%h3 Cleaned:
+= sanitize(@document.cleaned)
+
+%div
+  = link_to 'Edit', edit_document_path(@document)
+  \|
+  = link_to 'Back', documents_path
