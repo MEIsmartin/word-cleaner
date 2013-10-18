@@ -11,3 +11,18 @@
  *= require_self
  *= require_tree .
  */
+
+textarea {
+  height: 500px;
+  width: 80%;
+}
+
+input[type=text] {
+  width: 80%;
+}
+
+input[type=submit] {
+  background:0;
+  padding: .2em 1em;
+  font-size: 1.5em;
+}
